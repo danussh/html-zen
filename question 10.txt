@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>all types of input elements</title>
+</head>
+<body>
+
+<form>
+<h2> radio input </h2>
+ <input type="radio" id="salaried" name="emptype" >
+ <label for="salaried">salaried</label><br>
+ <input type="radio" id="own buisness" name="emptype" >
+ <label for="own buisness">own buisness</label><br>
+<hr>
+<h2> text input </h2>
+<p style="font-family:cursive"> with submit button</p>
+ <label for="username" >Username</label><br>
+ <input type="text" id="username" name="username"><br>
+ <label for="password" >password</label><br>
+ <input type="text" id="password" name="password"><br>
+<input type="submit" value="submit"><br>
+<hr>
+<h2> checkbox input </h2>
+ <input type="checkbox" id="vechile1" name="car">
+ <label for="vechile1" >i have car</label><br>
+<input type="checkbox" id="vechile2" name="Bike">
+ <label for="vechile2" >i have bike</label><br>
+<input type="checkbox" id="vechile3" name="cycle">
+ <label for="vechile3" >i have cycle</label><br>
+</form>
+ 
+</body>
+</html>
