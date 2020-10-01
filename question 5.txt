@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>add radio button</title>
+</head>
+<body>
+<form>
+<input type="radio" id="salaried" name="emptype" >
+<label for="salaried">salaried</label><br>
+ <input type="radio" id="own buisness" name="emptype" >
+ <label for="own buisness">own buisness</label><br>
+</body>
+</html>
