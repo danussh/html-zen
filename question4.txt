@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>open in seperate tab</title>
+</head>
+<body>
+<a href="https://google.com" target="_blank">visit google</a>
+</body>
+</html>
