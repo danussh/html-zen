@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+background-color:red;
+
+}
+</style>
+</head>
+<body>
+<form>
+<h1 style="color:white">YES! I Want to subscribe to <i>Mag-o-Zine</i></h1>
+<p><u>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp; <i>joe</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>&nbsp&nbsp;
+   <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>cheng</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+</p>
+<p>First Name &nbsp;&nbsp; Last Name</p>
+
+<p><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>1001 washington dc</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></p>
+<p>Address</p>
+<p><u>&nbsp;&nbsp&nbsp;<i>Augston</i>&nbsp;&nbsp;</u>&nbsp;&nbsp;<u>&nbsp;&nbsp;<i>Ca</i>&nbsp;&nbsp;</u> &nbsp;&nbsp;<u>&nbsp;&nbsp&nbsp;<i>99999</i>&nbsp;&nbsp;</u> <p>
+<p>city&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;state&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;Zip</p>
+
+
+
+<p>Subscribe for : 
+<input type="radio" id="1year" name="year">
+<label for="1year">1 year($19.95)</label>
+<input type="radio" id="2year" name="year">
+<label for="1year">2 year($35.00)</label></p>
+
+
+<p>Send me more information about:</p>
+<input type="checkbox" id="c-zine" name="c-zine">
+<label for:"c-zine">Computer-zine</label><br>
+<input type="checkbox" id="f-zine" name="f-zine">
+<label for:"f-zine">Fishing-zine</label><br>
+<input type="checkbox" id="cat-zine" name="cat-zine">
+<label for:"cat-zine">cat-o-zine</label><br>
+
+</form> 
+ </body>
+</html>
