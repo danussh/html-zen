@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a {
+  height: 150px;
+  width: 100%;
+  background-color:#32312C ;
+}
+img{
+border-radius:50%;
+position: relative;
+  left: 330px;
+  top:40px;
+}
+.b{
+  
+  top:-40px;
+  height: 50px;
+  width: 100%;
+  background-color:#32312C ;
+}
+.c{
+    position:relative;
+     left: 215px;
+     top:-80px;
+    background-color:yellow;
+    width:50%;
+    height:50px;
+    text-align:center;
+    font-size:300%
+
+}
+#d{
+ position:relative;
+ text-align:center;
+ top:-60px;
+}
+.vertical{
+      border-left: 2px solid black;
+  height: 600px;
+  position: relative;
+  left: 50%;
+  margin-left: -3px;
+  top: -49px;
+}
+.column1 {
+  position:relative;
+  top:-50px;
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 600px; 
+}
+.column2 {
+  position:relative;
+  top:-650px;
+  float: right;
+  width: 45%;
+  padding: 10px;
+  height: 600px; 
+}
+</style>
+</head>
+<body>
+<br>
+<div class="a"><img src="img_avatar.png" alt="Avatar"style="width:120px">
+</div>
+<br>
+<div class="b"></div>
+
+<div class="c">DANUSSH P</div>
+<h4 id="d">Balaji nagar Pattabirm,ch-72|8608765113|Hello@kickResume.com|www.kick.com<hr></h4>
+  <div class="column1">
+    <h2>PROFILE</h2>
+    <p>Disciplined and enthusiastic sales associate, conversant with POS and stock management systems. Eager to join the ABC Store team to boost sales numbers and customer loyalty metrics. Previous retail experience includes a summer job as a restocker and cashier at DEF Store.</p>
+    <h2 style="text-align:center"> TECHNICAL SKILLS</h2>
+   <p> &nbsp&nbsp * javascript<br>
+       &nbsp&nbsp * HTML<br>
+       &nbsp&nbsp * Css<br></p>
+  
+   <h2 style="text-align:center"> NON-TECHNICAL SKILLS</h2>
+   <p> &nbsp&nbsp * readingt<br>
+       &nbsp&nbsp * writing<br>
+       &nbsp&nbsp * Drawing<br></p>
+        <h2> WORK-EXPERIENCE</h2>
+        <p>*Waitress<br>
+
+Pizza Hut, Newark, NJ<br>
+
+2005–2009
+
+Worked passionately in customer service in a high-volume restaurant.
+Completed the F.A.S.T. customer service training class.
+Maintained a high tip average thanks to consistent customer satisfaction. </p>
+ </div>
+ 
+  
+  </div>
+  <div class="vertical"></div>
+  <div class="column2">
+  <h2> WORK-EXPERIENCE</h2>
+        <p>*Waitress<br>
+
+Pizza Hut, Newark, NJ<br>
+
+2005–2009
+
+Worked passionately in customer service in a high-volume restaurant.
+Completed the F.A.S.T. customer service training class.
+Maintained a high tip average thanks to consistent customer satisfaction. </p>
+    <h2>EDUCATION</h2>
+    <p>2009 MA in English Literature<BR>
+
+Harvard University, Cambridge, MA<BR>
+
+3.7 GPA<br>
+
+ 
+
+2007 BA in English Literature
+
+University of Pennsylvania, Philadelphia, PA<br>
+
+4.0 GPA</p>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
