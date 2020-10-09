@@ -1,0 +1,73 @@
+....................Difference between HTTP1.1 vs HTTP2 --> .........................
+
+
+1.HTTP/2 began as the SPDY protocol, developed primarily at Google with the intention of 
+reducing web page load latency by using techniques such as compression, multiplexing, and prioritization
+2.reduced latency and accelerates content download on modern web pages.
+3. HTTP/2 uses the binary framing layer to encapsulate all messages in binary format
+
+1.In this process, a client sends a text-based request to a server by calling a method like GET or POST.
+ In response, the server sends a resource like an HTML page back to the client.
+2.increased latency and delay in loading modern web pages.
+3.HTTP/1.1, which keeps all requests and responses in plain text format
+
+
+..............................Abstract Working of JS engine(V8) --> ......................
+
+
+1.It all starts with getting JavaScript code from the network.
+2.when java scriptcode passes through V8 parser the source code  turns it into an Abstract Syntax Tree (AST).
+Based on that AST, conversion of machine code
+3.At that point, the engine starts running the code and collecting feedback.
+4.then the machine code runs in processorand we get the output. 
+
+................List 5 difference between Browser JS(console) vs Nodejs -->.................. 
+
+Browser js
+1.executes javascript
+2.It is provided in script tag with src as filename.js
+3.bit difficult to program in browser comared to node js
+4.interacting with DOM or other web platforms like API
+5.we wont get luxuary to choose what browser we will use
+
+Node js
+1.executes javascript
+2.It is provided as node filename.js
+3.comfort of programing is an added advantage
+4.no interaction with DOM or other web platforms like API
+5.control the enviorment
+
+..............what happens when you type a URL in the address bar in the browser?.................
+
+
+1.You enter a URL into a web browser
+2.The browser looks up the IP address for the domain name via DNS and matches it
+3.The browser sends a HTTP request to the server
+4.The server sends back a HTTP response
+5.The browser begins rendering the HTML
+6.The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
+7.Once the page is loaded, the browser sends further async requests as needed.
+
+...................................http version history...........................................
+
+1.HTTP/0.9 — The One-line Protocol
+   Initial version of HTTP — a simple client-server, request-response,
+   Methods supported: GET only
+   Connection nature: terminated immediately after the response
+    No HTTP headers, No status/error codes, No URLs
+
+2.HTTP/1.0 — Building extensibility
+   Browser-friendly protocol
+   Provided header fields including both request and response 
+   Methods supported: GET , HEAD , POST
+   Connection nature: terminated immediately after the response
+3.HTTP/1.1 — The standardized protocol
+  This is the HTTP version currently in common use.
+   Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS
+    Connection nature: long-lived
+   faster response and great bandwidth savings by adding cache support.
+3.HTTP/2
+  HTTP/2 was derived from the earlier experimental SPDY protocol, developed by Google. It made web applications faster, simpler, and more robust.
+  But in HTTP/2, the header fields are compressed and transmitted in binary codes making it more compact and efficient for the user computer to load.
+  Header compression decreases the overhead of client request which lowers bandwidth and decreases page load time.
+  Multiplexing multiple requests over a single TCP connection
