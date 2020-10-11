@@ -1,0 +1,330 @@
+................ * Use typeof in all the datatypes and check the result................
+    * typeof(1)                   number
+    * typeof(1.1)                  number
+    * typeof("1.1")                string
+    * typeof(true)                 boolean
+    * typeof(null)                  object
+    * typeof(undefined)            undefined
+    * typeof([])                     object
+    * typeof({})                     object
+
+......................* What is the difference between window, screen, and document in Javascript?..........
+1.window
+  Window is the global object in a browser
+  window can be window.window
+  window contains everything, so you can call window.screen and window.document to get those elements
+2.screen
+  The screen is the screen, it contains properties about the user's display.
+   screen can be window.screen
+  describes the physical display's full screen
+3.document
+  The document is where the DOM is.
+  document can also be window.document
+  Each window object has a document object to be rendered.
+
+...............* Write a blog about objects and its internal representation in Javascript.............
+ objects can contain many values.
+  Arrays are always objects
+  Functions are always objects
+  Objects are always objects
+  Booleans can be objects (if defined with the new keyword)
+   Numbers can be objects (if defined with the new keyword)
+   Strings can be objects (if defined with the new keyword)
+    The values are written as name : value pairs (name and value separated by a colon).
+Example:
+key:value,where key is a string
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+to get a particular value from key---person.firstName is Jhon
+var person = new Object(); to create an new object in person
+person.Color = "black"; 
+The syntax for accessing the property of an object is:
+  objectName.property  
+ For example, let’s create an object named myCar and give it properties named make, model, and year as follows:
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+Unassigned properties of an object are undefined (and not null).
+myCar.color; // undefined
+
+..............* How do you copy by value a composite data type?............................
+Composite Data Types
+array.
+object.
+When Composite data is copied to a variable, only a reference to the data is stored in the variable's memory slot.
+The reference tells the interpreter where the actual data is kept
+We say that composite data is copied by reference.
+***Two objects are only strictly equal if they refer to the same underlying object.
+var obj3 = { 'car' : 'purple' }
+var obj4 = obj3;
+obj3 === obj4;  // true
+or
+var objA = {a: 1};
+var objB = objA;
+objA.a = 2;
+objB.a; // 2 in opscreen
+
+ in this way we can copy by value a compsite data type
+
+
+...............why there is a difference in behavior for copying contents in primitive and non primitive type?.......... 
+
+Primitives are known as being immutable data types because there is no way to change a primitive value once it gets created.
+Primitives are compared by value
+ example:
+ var number1 = 5;
+ var number2 = 5;
+number1 === number 2; // true
+ example:
+ var string = 'This is a string.';
+ string[1] = 'H'
+ console.log(string) // 'This is a string.'
+
+Non-primitive values are mutable data types. The value of an object can be changed after it gets created.
+var arr = [ 'one', 'two', 'three', 'four', 'five' ];
+arr[1] = 'TWO';
+console.log(arr) // [ 'one', 'TWO', 'three', 'four', 'five' ];
+Objects are not compared by value.
+ This means that even if two objects have the same properties and values, they are not strictly equal. Same goes for arrays. Even if they have the same elements that are in the same order, they are not strictly equal.
+var obj1 = { 'cat': 'playful' };
+var obj2 = { 'cat': 'playful' };
+obj1 === obj2;  // false
+Non primitive values can also be referred to as reference types because they are being compared by reference instead of value.
+ Two objects are only strictly equal if they refer to the same underlying object.
+var obj3 = { 'car' : 'purple' }
+var obj4 = obj3;
+obj3 === obj4;  // true
+ 
+
+******************JSON task*************************************
+Problem 1 (5 mins):
+
+Parsing an JSON object’s Values:
+function printAllKeys(obj) {
+var a=[];
+for (var i in object)
+{
+    var b=a.push(object[i])
+   
+}
+ console.log(a);
+}
+--------------------------------------------------------------
+Problem 2(5 mins) :
+
+Parsing an JSON object’s Keys:
+
+function printAllKeys(obj) {
+ var a=[];
+for (var i in object)
+{
+    var b=a.push(i)
+   
+}
+ console.log(a);
+}
+-----------------------------------------------------------------
+Problem 3( 7–9 mins):
+
+Parsing an JSON object and convert it to a list:
+
+var obj = {name: “ISRO”, age: 35, role: “Scientist”};
+function convertListToObject(obj) {
+ var a=[];
+
+for(var i in object) {
+ a.push([i, object[i]]);
+}
+console.log(a);
+}
+----------------------------------------------------------------------
+Problem 4( 5 mins):
+
+Parsing a list and transform the first and last elements of it:
+ function transformFirstAndLast(arr) {
+ var array = ["GUVI", "I", "am", "Geek"];
+var b=array[0];
+var c=array[array.length-1]
+console.log( "var" +  "object" + "="+ "{" + b + ":" + c + "}" )
+
+}
+
+----------------------------------------------------------------------------
+Problem 5 ( 7 -9 mins):
+
+Parsing a list of lists and convert into a JSON object:
+
+var array = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+
+function fromListToObject() {
+  var object = {}; // out of the loop
+  for (var i = 0; i < array.length; ++i) { // iterate to last
+    var newArray = array[i];
+    object[newArray[0]] = newArray[1];
+  }
+  return object; // out of the loop
+}
+
+var obj = fromListToObject(array);
+
+console.log(obj);
+
+
+or
+
+function fromListToObject() {
+var obj = Object.fromEntries(array);
+ return obj;
+}
+var object = fromListToObject(array);
+
+console.log(object);
+
+------------------------------------------------------------------------------
+Problem 6 (10 mins):
+
+Parsing a list of lists and convert into a JSON object:
+
+var arr = [[['firstName', 'Vasanth'], ['lastName', 'Raja'], ['age', 24], ['role', 'JSWizard']], [['firstName', 'Sri'], ['lastName', 'Devi'], ['age', 28], ['role', 'Coder']]];
+console.log(arr);
+var a=[];
+var obj={};
+for(i=0; i<arr.length; i++)
+{
+    
+	for(j=0; j<arr[i].length; j++)
+	{
+	    
+		for(k=0; k<arr[i][j].length; k++)
+		{
+		   
+			obj[arr[i][j][0]] = arr[i][j][1];
+		
+		}
+		
+	}
+	a.push(obj)
+  }
+console.log(a);
+
+-----------------------------------------------------------------------------------------
+Problem 7 (10 — 20 mins):
+
+Parsing two JSON objects and Compare:
+
+
+var expected = {foo: 5, bar: 6};
+var actual = {foo: 5, bar: 6}
+
+if(JSON.stringify(expected)===JSON.stringify(actual))
+{
+console.log("Passed")
+}
+else
+{
+    console.log("FAILED")
+}
+----------------------------------------------------------------------------------------
+Problem 8(10 mins):
+
+Parsing JSON objects and Compare:
+
+I have a mock data of security Questions and Answers. You function should take the object and a pair of strings and should return if the quest is present and if its valid answer
+
+var securityQuestions = [
+ {
+ question: 'What was your first pet’s name?',
+ expectedAnswer: 'FlufferNutter'
+ },
+ {
+ question: 'What was the model year of your first car?',
+ expectedAnswer: '1985'
+ },
+ {
+ question: 'What city were you born in?',
+ expectedAnswer: 'NYC'
+ }
+]
+console.log(securityQuestions)
+function chksecurityQuestions(securityQuestions,question) {
+    if(ques==ans)
+    {
+        return  false;
+    }
+    else
+    {
+        return true;
+    }
+ 
+}
+var ques = 'What was your first pet’s name?';
+var ans  =  'FlufferNutter';
+var statu = chksecurityQuestions(securityQuestions, ques, ans);
+console.log(statu);
+
+
+-------------------------------------------------------------------------------------------------
+Problem 9(20 mins):
+
+Parsing JSON objects and Compare:
+
+Write a function to return the list of characters below 20 age
+
+var arr=[];
+var students = [
+    
+ {name: 'Siddharth Abhimanyu', age: 21},
+ 
+ {name: 'Malar', age: 25},
+ 
+ {name: 'Maari',age: 18},
+ 
+ {name: 'Bhallala Deva',age: 17},
+ 
+ {name: 'Baahubali',age: 16},
+ 
+ {name: 'AAK chandran',age: 23},
+ 
+ {name:'Gabbar Singh',age: 33},
+ 
+ {name: 'Mogambo',age: 53},
+ 
+ {name: 'Munnabhai',age: 40},
+ 
+ {name: 'Sher Khan',age: 20},
+ {name: 'Chulbul Pandey',age: 19},
+ {name: 'Anthony',age: 28},
+ {name: 'Devdas',age: 56} 
+ ];
+// console.log(students);
+ for(var i=0;i<students.length;i++)
+{
+ 
+       
+        if(students[i].age < 20)
+        {
+            arr.push(students[i]);
+        }
+    
+}
+    console.log(arr);
+-------------------------------------------------------------------------------------------------------
+*Extract and print the flag url of all the countries in console. use the html template.
+<html>
+<head> <script src="file.js"></script>
+</head>
+<body>
+     //code
+</body>
+</html>
+
+file.js file for print flag url 
+
+for(var i in arr){
+    console.log(arr[i].flag)
+}
+
+
+
+
+
