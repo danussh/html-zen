@@ -1,0 +1,57 @@
+
+1.resume html link:https://github.com/danussh/html-zen/blob/master/resumew3.txt
+
+
+2.-------------* Give an Write up on the topic authorization & CORS-----------------------------
+Cross-Origin Resource Sharing
+Cross-Origin Resource Sharing (CORS) is a protocol that enables scripts running on a browser client to interact with resources from a different origin. This is useful because,
+thanks to the same-origin policy followed by XMLHttpRequest and fetch, JavaScript can only make calls to URLs that live on the same origin as the location where the script is running
+Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell browsers to give a web application running at one origin,
+access to selected resources from a different origin
+A web application executes a cross-origin HTTP request when it requests a resource that has a different origin from its own.
+
+This means that a web application using those APIs can only request resources from the same origin the application was loaded from unless the response from other origins includes
+the right CORS headers.
+The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. Modern browsers use CORS in APIs such as XMLHttpRequest or Fetch to mitigate the risks of cross-origin HTTP requests.
+
+The Cross-Origin Resource Sharing standard works by adding new HTTP headers that let servers describe which origins are permitted to read that information from a web browser.
+Simple requests
+ A “simple request” is one that meets all the following conditions:
+
+One of the allowed methods:
+*GET
+*HEAD
+*POST
+
+Authorization Request Header___________________
+
+The HTTP Authorization request header contains the credentials to authenticate a user agent with a server.
+
+APIs use authorization to ensure that client requests access data securely. This can involve authenticating the sender of a request and verifying that they have permission to access or manipulate the relevant data. If you're building an API, you can choose from a variety of auth models. If you're integrating a third-party API, the required authorization will be specified by the API provider
+list of Authorization Request Headers
+1 Basic Auth
+2 Bearer Token
+3 API Key
+
+1.Basic Auth
+it is a simple authentication scheme built into the HTTP protocol. The client sends HTTP requests with the Authorization header that contains the word Basic, followed by a space and a base64-encoded(non-encrypted) string username: password.
+3.API Key:
+An API key is a token that a client provides when making API calls. With API key auth, you send a key-value pair to the API either in the request headers or query parameters. Some APIs use API keys for authorization.
+
+
+-----------------------------------------* Generate an API key with given link below---------------------------------------------------------
+                                         * https://openweathermap.org/guide
+                                         * Print the current weather data in console- By city name, By city ID, By lat lang
+
+
+By city name............
+
+var req=new XMLHttpRequest()
+req.open("GET","https://api.openweathermap.org/data/2.5/weather?q=New York&appid=190daa2ee7b0c15643c68c44ee2a2ef5",true)
+req.send()
+var data;
+req.onload=function(){
+    data=JSON.parse(this.response)
+        console.log(data)
+    
+}
