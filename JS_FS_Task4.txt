@@ -1,0 +1,267 @@
+                                                                       Do the below programs in anonymous function 
+...............Print odd numbers in an array........                                                                       
+
+var a=[1,2,3,4,5,6,7];
+var odd = function (){
+    
+  var d= a.filter(item => !(item%2===0));
+   console.log(d);
+};
+odd(a);
+
+
+-------Convert all the strings to title caps in a string array-----------------
+
+var a="danussh";
+var b=a.split(" ");
+var cap = function (){
+
+  var d= b.map(item =>item.toUpperCase());
+   console.log(d.join(""));
+};
+cap(a);
+
+
+-------------------Sum of all numbers in an array--------------------------
+
+var a=[1,2,3,4,5];
+
+var sum = function (add){
+
+  var s= a.reduce((res,item)=>{ return res + item},1);
+   console.log(s);
+};
+sum(a);
+
+
+--------------------------------------Return all the prime numbers in an array--------------------------
+var array = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var prime = array.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++)
+  {
+    if (number % i === 0) 
+    return false;
+  }
+  return true;
+});
+
+console.log(prime);
+
+---------------------------------------Return all the palindromes in an array-----------------------------
+
+var a=["madam","cat","tat"];
+var pal = function(){
+for(var i=0;i<=a.length;i++)
+{ 
+ 
+   if(a[i].split("").reverse().join("")===a[i])
+   {
+       console.log(a[i]);
+   }
+}
+return true;
+};
+pal(a);
+
+-----------------------------------------Return median of two sorted arrays of same size----------------------------------
+
+var a=[6,4,3];
+var b=[2,2,8];
+var med=function(array1,arry2){
+var c=a.concat(b).sort();
+console.log(c);
+d=c.length;
+var median=((d/2)+((d/2)+1))/2;
+console.log(median);
+
+
+};
+med(a,b);
+
+
+----------------------------------------------Remove duplicates from an array------------------------------------------------
+
+var arr=["a","a","b","c","c"];
+var removedupilicates=function(array){
+    var rem=[...new Set(arr)];
+console.log(rem);
+    
+};
+removedupilicates(arr);
+
+
+-------------------------------------------------Rotate an array by k times and return the rotated array------------------------------
+
+var a= [1,2,3,4,5];
+var b=userInput[0];
+var temp1=[];
+var temp2=[];
+var rot=function (array,times){
+for(let k=0;k<b;k++)
+{
+    temp1.push(a[k]);
+}
+
+var c=[...temp1];
+
+for(var i=0;i<a.length;i++)
+{
+if(a[i]===c[i])
+{}
+else
+{
+    temp2.push(a[i]);
+}
+}
+console.log(temp2.concat(temp1).join(" "));
+};
+rot(a,b);
+
+-------------------------------------------------------------------------end of anonymus function----------------------------------------------
+
+
+
+
+                                ******************************************same problems in IIFE*******************************************************************
+...............Print odd numbers in an array.........
+var a=[1,2,3,4,5,6,7];
+(function(odd){
+    
+    var d= a.filter(item => !(item%2===0));
+    console.log(d)
+    
+})(a)
+
+
+//-------Convert all the strings to title caps in a string array-----------------
+
+var a="danussh";
+var b=a.split(" ");
+(function (){
+
+  var d= b.map(item =>item.toUpperCase());
+   console.log(d.join(""));
+})(a);
+
+//-------------------Sum of all numbers in an array--------------------------
+
+var a=[1,2,3,4,5];
+
+( function (add){
+
+  var s= a.reduce((res,item)=>{ return res + item},1);
+   console.log(s);
+})(a);
+
+
+var a= [1,2,3,4,5];
+var b=userInput[0];
+var temp1=[];
+var temp2=[];
+(function (array,times){
+for(let k=0;k<b;k++)
+{
+    temp1.push(a[k]);
+}
+
+var c=[...temp1];
+
+for(var i=0;i<a.length;i++)
+{
+if(a[i]===c[i])
+{}
+else
+{
+    temp2.push(a[i]);
+}
+}
+console.log(temp2.concat(temp1).join(" "));
+})();
+
+
+//--------------------------------------Return all the prime numbers in an array//--------------------------
+var array = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+(function(array){
+
+var prime = array.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++)
+  {
+    if (number % i === 0) 
+    return false;
+  }
+  return true;
+});
+
+console.log(prime);})
+
+(array);
+
+
+//---------------------------------------Return all the palindromes in an array//-----------------------------
+
+var a=["madam","cat","tat"];
+
+(function(){
+    for(var i=0;i<=a.length;i++)
+{ 
+ 
+   if(a[i].split("").reverse().join("")===a[i])
+   {
+       console.log(a[i]);
+   }
+}
+return true;
+})();
+//-----------------------------------------Return median of two sorted arrays of same size----------------------------------
+
+var a=[6,4,3];
+var b=[2,2,8];
+(function(array1,arry2){
+var c=a.concat(b).sort();
+console.log(c);
+d=c.length;
+var median=((d/2)+((d/2)+1))/2;
+console.log(median);
+
+
+})(a,b);
+
+//----------------------------------------------Remove duplicates from an array------------------------------------------------
+
+var arr=["a","a","b","c","c"];
+(function(array){
+    var rem=[...new Set(arr)];
+console.log(rem);
+    
+})();
+
+-------------------------------------------------Rotate an array by k times and return the rotated array------------------------------
+
+var a= [1,2,3,4,5];
+var b=userInput[0];
+var temp1=[];
+var temp2=[];
+(function (array,times){
+for(let k=0;k<b;k++)
+{
+    temp1.push(a[k]);
+}
+
+var c=[...temp1];
+
+for(var i=0;i<a.length;i++)
+{
+if(a[i]===c[i])
+{}
+else
+{
+    temp2.push(a[i]);
+}
+}
+console.log(temp2.concat(temp1).join(" "));
+})();
+
+ 
