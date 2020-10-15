@@ -1,0 +1,132 @@
+
+
+
+
+                                                      Solving problems using array functions on rest countries data.
+
+- ---------------------------Get all the countries from Asia continent using Filter function------------------------
+      
+var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.eu/rest/v2/all',true);
+request.send();
+request.onload=function(){
+var data=JSON.parse(this.response);
+var c=data.filter((item)=>item.region=="Asia");
+console.log(c)
+
+}
+
+----------------------- Get all the countries with population of less than 2 lacs using Filter function-------------------------------------
+
+var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.eu/rest/v2/all',true);
+request.send();
+request.onload=function(){
+var data=JSON.parse(this.response);
+var c=data.filter((item)=>item.population<200000);
+console.log(c)
+}
+
+
+------------------------------------------Print the following details name, capital, flag using forEach function-------------------------------------
+
+//Print the Name,Capital and Flag for all the countries using forEach function
+
+//creating an instance of XMLHttpRequest
+var req = new XMLHttpRequest();
+//opening a request
+req.open('GET', 'https://restcountries.eu/rest/v2/all', true);
+//sending it
+req.send()
+//using onload to handle the data after loading it
+req.onload = function () {
+    //parsing it to an object since the response is received as a string
+    var data = JSON.parse(this.response);
+    //Applying forEach to the data to extract name,capital and flag url for all the countries.
+    var details=data.forEach((country)=>{
+        console.log("name :" + country.name + "," +"capital :" + country.capital+ "," + "flag :" + country.flag)
+    })
+    console.log(details);
+}
+
+------------------------------------------ Print the total population of countries using reduce function-------------------------------------------------
+
+var req=new XMLHttpRequest();
+
+req.open("GET","https://restcountries.eu/rest/v2/all",true);
+
+req.send()
+
+req.onload=function(){
+ var data=JSON.parse(this.response);
+    
+    const asian_countries=data.filter((country)=>{
+        return country["region"]==="Asia";
+    })
+    
+    const asian_population=asian_countries.reduce((total,country)=>{
+        return total=total + country["population"]
+    },0)
+    
+    console.log(asian_population)
+------------------------------------------- Print the total population of countries in Asia continent using reduce and filter function--------------------------------------------
+
+
+var req=new XMLHttpRequest();
+
+req.open("GET","https://restcountries.eu/rest/v2/all",true);
+
+req.send()
+
+req.onload=function(){
+    
+    var data=JSON.parse(this.response);
+    //filter condition to the data to extract the countries in Asian region.
+    var asian_countries=data.filter((country)=>{
+        return country["region"]==="Asia";
+    })
+    //reduce method to the asian_countries to calculate the total population
+    var asian_population=asian_countries.reduce((total,country)=>{
+        return total+=country["population"]
+    },0)
+    //printing the countries
+    console.log(asian_population)
+}
+
+
+- ------------------------------------------------Print the contras which use US Dollars as currency. ------------------------------------------------------------
+//Get all the countries which use US Dollars as thier currency.
+
+
+var req=new XMLHttpRequest();
+
+req.open("GET","https://restcountries.eu/rest/v2/all",true);
+
+req.send()
+
+req.onload=function(){
+   
+    var data=JSON.parse(this.response);
+    
+    const countries_using_dollars=data.filter((country)=>{
+        return country["currencies"][0]["code"]==="USD";      //Applying filter condition to the data to extract the countries using USD.
+        
+    })
+    //printing the countries
+    console.log(countries_using_dollars)
+
+------------------------Add error handling to the xml http request code--------------------------------
+//Error handling in XMLHttp request
+try{
+    var req=new XMLHttpRequest();
+    re.open("GET","https://restcountries.eu/rest/v2/all",true)  
+    req.send()
+    req.onload=function(){
+        var data=JSON.parse(this.response)
+        console.log(data)
+    }
+}
+catch(error){
+    alert("An Error Found : "+error.message)
+}
+
