@@ -69,6 +69,7 @@ req.onload=function(){
     },0)
     
     console.log(asian_population)
+    }
 ------------------------------------------- Print the total population of countries in Asia continent using reduce and filter function--------------------------------------------
 
 
