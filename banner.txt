@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Banner</title>
+    <style>
+        .container {
+            position:relative;
+  height: 2000px;
+  width: 70%;
+  margin:auto;
+  
+  background-color: rgba(2, 0, 8, 0.404) ;
+  display:grid;
+  grid-template-rows: repeat(7,250px);
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 25px;
+ }
+.box1{
+    
+   background-color: rgb(226, 214, 43);
+   text-align: center;
+    margin-left:50px;
+    margin-top:100px;
+    color:white;
+
+    font-style:italic ;
+
+
+}
+.box2{
+    background-color: rgb(48, 138, 241);
+    margin-right:50px;
+    text-align: center;
+    margin-top:100px;
+    color:white;
+    
+    font-style:italic ;
+}
+.box3{
+    grid-column: 1/-1;
+    background-color: crimson;
+    text-align: center;
+    margin-left:50px;
+  margin-right:50px;
+  color:white;
+    
+    font-style:italic ;
+}
+.box4{
+    grid-column: 1/-1;
+    background-color: rgb(48, 138, 241);
+    text-align: center;
+    margin-left:50px;
+  margin-right:50px;
+  color:white;
+    
+    font-style:italic ;
+}
+.box5{
+    background-color:crimson;
+    text-align: center;
+    margin-left:50px;
+    color:white;
+    
+    font-style:italic ;
+}
+.box6{
+    background-color: rgb(226, 214, 43);
+    margin-right:50px;
+    text-align: center;
+    color:white;
+   
+    font-style:italic ;
+}
+.box7{
+    grid-column: 1/-1;
+    background-color:rgb(48, 138, 241);
+    text-align: center;
+    margin-left:50px;
+  margin-right:50px;
+  color:white;
+ 
+    font-style:italic ;
+}
+
+.box8{
+    grid-column: 1/-1;
+    background-color: rgb(226, 214, 43);
+    text-align: center;
+    margin-left:50px;
+  margin-right:50px;
+  color:white;
+  
+    font-style:italic ;
+}
+
+.box9{
+    background-color: rgb(48, 138, 241);
+    margin-left:50px;
+    text-align: center;
+    color:white;
+   
+    font-style:italic ;
+}
+.box10{
+    background-color:red;
+    margin-right: 50px;
+    color:white;
+    text-align: center;
+    
+    font-style:italic ;
+}
+#head{
+    position:absolute;
+    line-height: 20%;
+    text-align: center;
+    left:715px
+}
+
+</style>
+</head>
+<body>
+    <div id="head">
+ <h1 style="color:red">OBESITY</h1>
+ <p style="color:red"> CHILDHOOD STATISTICS</p>
+    </div>
+    <div class="container">
+
+        <div class="box1"><strong>1 IN 3</strong><br>
+            <strong>ARE OVERWEIGHT OR OBESE</strong>  
+            <p>People and families may make decisions based on their environment or community. For example, a person may not walk or bike to the store or to work because of a lack of sidewalks or safe bike trails.
+                </p>
+        </div>
+        <div class="box2"><strong>12.5 MILLION</strong>
+            <p>children aged(10-19 ages) are obese and fat</p>
+            <strong>33 HOURS / WEEK</strong><br>
+            <p>The childs are settled in obese state due to their calories intake.</p>
+    </div>
+        <div class="box3"><strong>OBESITY IS LINKED TO MORE CHRONIC CONDITION</strong>
+            <p>Obesity is serious because it is associated with poorer mental health outcomes and reduced quality of life. Obesity is also associated with the leading causes of death in the United States and worldwide, 
+                including diabetes, heart disease, stroke, and some types of cancer.</p><br>
+                <p>Obesity-related medical care costs in the United States, in 2008 dollars, were an estimated $147 billion.15 Annual nationwide productivity costs of obesity-related absenteeism 
+                    range between $3.38 billion ($79 per obese individual) and $6.38 billion</p>
+        </div>
+        <div class="box4">
+            <strong >RISK FACTORS</strong>
+            <p>90% of adults drink more juices wich contains more sugar 
+                and consume ore Frencch fries</p><br>
+                <h2>80% of adults drink more juices wich contains more sugar </h2>
+        </div>
+            
+        <div class="box5">  <h1>FRENCH FRIES</h1>
+            <h3>90% of adults drink more juices wich contains more sugar 
+                and consume ore Frencch fries
+            </h3>
+            <h1>40%<h1></div>
+        <div class="box6">
+            <h1>JUICE</h1>
+            <h2>80% of adults drink more juices wich contains more sugar </h2>
+            <h1>40%<h1>
+        </div>
+        <div class="box7">
+            <h2>40% TO 50% OF<br>
+
+                TOODLERS WATCH <br>TELEVISION<br> MORE
+                THAN THE RECOMENDED</h6>
+        </div>
+        <div class="box8"><h2>NEARLY 1/2 OF PRE-SCHOOL</h2>
+            <h3>Dont get phyical activity<br>
+            thus its necessary for them to get into shape.</h3>
+        </div>
+        <div class="box9"><h2>
+            THE COST OF OBESITY<br>
+            $ 147 BILLION.<br>
+            <p>it increases rapidly and thus its count has to be reduced</p>
+        </h2></div>
+        <div class="box10">
+            <h2>CHILDREN WHO EAT HEALTHY<br>
+            STAY HEALTHY<br>
+        LIVE HEALTHY.</h2><br>
+        <p>Thus its important for children to stay Healthy</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
