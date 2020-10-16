@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <title>Banner</title>
     <style>
+    
+
+
         .container {
             position:relative;
   height: 2000px;
@@ -128,9 +132,16 @@
     <div class="container">
 
         <div class="box1"><strong>1 IN 3</strong><br>
-            <strong>ARE OVERWEIGHT OR OBESE</strong>  
+            <strong>ARE OVERWEIGHT OR OBESE</strong> 
+             </span>
+                <span class="material-icons">
+                    person
+                </span>
+                <span class="material-icons">
+                    person
+                </span> 
             <p>People and families may make decisions based on their environment or community. For example, a person may not walk or bike to the store or to work because of a lack of sidewalks or safe bike trails.
-                </p>
+                </p>  
         </div>
         <div class="box2"><strong>12.5 MILLION</strong>
             <p>children aged(10-19 ages) are obese and fat</p>
@@ -138,8 +149,18 @@
             <p>The childs are settled in obese state due to their calories intake.</p>
     </div>
         <div class="box3"><strong>OBESITY IS LINKED TO MORE CHRONIC CONDITION</strong>
+           
             <p>Obesity is serious because it is associated with poorer mental health outcomes and reduced quality of life. Obesity is also associated with the leading causes of death in the United States and worldwide, 
-                including diabetes, heart disease, stroke, and some types of cancer.</p><br>
+                including diabetes, heart disease, stroke, and some types of cancer.</p>
+                <span class="material-icons">
+                    smoking_rooms
+                </span>
+                <span class="material-icons">
+                    no_drinks
+                </span>
+                <span class="material-icons">
+                    wheelchair_pickup
+                </span>
                 <p>Obesity-related medical care costs in the United States, in 2008 dollars, were an estimated $147 billion.15 Annual nationwide productivity costs of obesity-related absenteeism 
                     range between $3.38 billion ($79 per obese individual) and $6.38 billion</p>
         </div>
