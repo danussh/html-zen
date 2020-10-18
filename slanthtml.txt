@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANNER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+
+
+ <style>
+     
+       #a{
+        
+        border-radius: 25px;
+        height: 3400px;
+        margin:auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        width: 90%;
+        background-image: url("https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png");
+        }
+    .skew1{
+        border-radius: 25px;
+        background-image: url("https://freefrontend.com/assets/img/css-background-patterns/css-lattice-pattern.png");
+    height: 250px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+   
+     }
+  .skew2{
+    position:relative;
+    top:-30px;
+    background-image: url("https://cutewallpaper.org/21/dark-green-forest-wallpaper/Download-wallpaper-1600x900-trees-top-view-forest-dark-.jpg");
+    height: 350px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px; 
+    transform: skew(0deg,-3deg) ;
+  }
+
+  .skew3{
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://www.html5canvastutorials.com/demos/assets/blue-background.jpg");
+    height: 350px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+  }
+  .skew4{
+
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://wallpaperaccess.com/full/1556304.jpg");
+    height: 350px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+}
+
+.skew5{
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://cutewallpaper.org/21/dark-green-forest-wallpaper/Download-wallpaper-1600x900-trees-top-view-forest-dark-.jpg");
+    height: 350px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+
+}
+.skew6{
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://images.freeimages.com/images/large-previews/5eb/more-photo-file-2-1169682.jpg");
+    height: 390px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+
+}
+.skew7{
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://cutewallpaper.org/21/dark-green-forest-wallpaper/Download-wallpaper-1600x900-trees-top-view-forest-dark-.jpg");
+    height: 390px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+
+}
+.skew8{
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+    background-image: url("https://wallpaperaccess.com/full/1556304.jpg");
+    height: 390px;
+    width:100%;
+    margin:auto;
+    margin-bottom: -25px;
+
+}
+.skew9{
+
+    position:relative;
+    top:-30px;
+    transform: skew(0deg,-3deg) ;
+background-image: url("https://cutewallpaper.org/21/dark-green-forest-wallpaper/Download-wallpaper-1600x900-trees-top-view-forest-dark-.jpg");
+height: 390px;
+width:100%;
+margin:auto;
+margin-bottom: -25px;
+
+}
+.wrap1 {
+ 
+    color:azure;
+    transform: skew(0deg,0deg) ;
+    text-align: center;
+    
+}
+.wrap2 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap3 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap4 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap5 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap6 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap7 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap8 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.wrap9 {
+    position:relative;
+    color:azure;
+    transform: skew(0deg,3deg) ;
+    text-align: center;
+    top:60px;
+    
+}
+.A{
+   
+    height: 120px;
+    margin-left: 600px;
+    margin-right: 00px;
+
+}
+.foo{
+     position:relative;
+     top:30px;
+    margin-right: 500px;
+    margin-left:30px;
+    color:white;
+
+}
+.fooa{
+    position:relative;
+    float:right;
+    top:-150px;
+    color:white;
+    margin-right: 66px;
+    letter-spacing: 2px;
+
+}
+
+</style>
+</head>
+<body>
+  
+      <div id="a">
+        </p>
+        <div class="skew1">
+            <div class="wrap1">
+                <br>
+                <h1><span style="font-size: 2.5cm;">S</span>CROLLING IN WEB DESIGN</h1>
+                <h2><span style="letter-spacing: 2mm;">THE LONG & THE SHORT OF IT</span></h2>
+            </div>
+        </div>
+        <div class="skew2">
+            <div class="wrap2">
+                <h1 id="m"><span style="font-size: 2.5cm;">L</span>ONG SCROLL : <em>The Good Stuff</em></h1>
+                <div class="A">
+                <p>There's more visual freedom in parallax website design.Rather
+                    than focusing on block style information architecture,you can create refreshing and engaging visuals
+                   such as animations or beautiful photography,that act as a continuum,ultimately inspiring users to
+                   scroll down the page.
+                </p>
+                
+                </P>
+                </div>
+            </div>
+        </div>
+        <div class="skew3">
+            <div class="wrap3">
+                <h1 id="m"><span style="font-size: 2.5cm;">s</span>TORY TELLING:</h1>
+                <div class="A">
+                <h2>Do you want to tell a story?</h3>
+
+                <p>Do you want to tell a story with your product or service?<br>Long-scrolling ends itself well to a narrative and 
+                    encourages meaningful interaction for users.</p>
+                </div>
+            </div>
+        </div>
+        <div class="skew4">
+            <div class="wrap4">
+                <h1 id="m"><span style="font-size: 2.5cm;">s</span>MART DEVICES:</h1>
+                <div class="A">
+                    <h1>Smart devices play a vital role in graphics</h1>
+                    Mobiles and Tablets have evolved the way we engage in websites.It's now less about clicking and more about scrolling
+                                 and tapping.Long scrolling websites take away the barrier of complex navigation,providing a responsive ,user friendly experience for mobile users.
+                </div>
+            </div>
+        </div>
+        
+        <div class="skew5">
+            <div class="wrap5">
+                <h1 id="m"><span style="font-size: 2.5cm;">P</span>unch straight to point message</h1>
+                <div class="A">
+                    <h1>Punch ahead to Important points:</h1>
+                    Parallax website design is a great solution for us time poor website browsers,as it forces businesses convey their message and vision into 
+                    one dynamic web design page
+                    </div>
+                
+            </div>
+        </div>
+    
+        <div class="skew6">
+            <div class="wrap6">
+                <h1 id="m"><span style="font-size: 2.5cm;">F</span>ASIER FOR USER : <em> Realize their Dream</em></h1>
+                <div class="A">
+                  These days,scrolling is so simple that it's become an instinctive action,whereas clicking through to another page requires thought and motivation.
+                            A single page website allows user to identify their purpose on the website quicker than needing to sit through multiple pages.
+                    </div>
+               
+            </div>
+        </div>
+    
+        <div class="skew7">
+            <div class="wrap7">
+                <h1 id="m"><span style="font-size: 2.5cm;">L</span>ONG SCROLL :<em> Not so good Stuff</em></h1>
+                
+                <h4>YOU NEED TO BE SEARCH ENGINE</h4>
+                <div class="A">
+            <p>There's more visual freedom in parallax website design.Rather
+                than focusing on block style information architecture,you can create refreshing and engaging visuals
+                      such as animations or beautiful photography,that act as a continuum,ultimately inspiring users to
+                      scroll down the page There's more visual freedom in parallax website design.Rather
+                      than focusing on block style information architecture,you can create refreshing and engaging visuals
+                     such as animations or beautiful photography.</p> 
+                </div>    
+            </div>
+        </div>
+    
+        <div class="skew8">
+            <div class="wrap8">
+                <h1 id="m"><span style="font-size: 2.5cm;">s</span>LOWER TIMES:</h1>
+                <div class="A">
+                        50% of website users bounce all the page it hasn't loaded in 3-b seconds.So the more high resolution imagery and animationa you include,the longer it takes to lad the pages.
+                            When writingthis article ,we tested some popular parallax websites,and bound that the ones with complex visuals look up to 30 seconds to load on a mobile device,whereas simple and minimalist long scroll websites
+                            loaded within a few seconds.
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="skew9">
+            <div class="wrap9">
+                <h1 id="m"><span style="font-size: 2.5cm;">A</span>WKARD NAVIGATION:</h1>
+                <div class="A">
+                    Instead of hitting the "back" button,users must scroll back up the page which can be frustratingfor users who want to refer back to a certain element.An easy way aroud this is to include top 
+                    navigation and have each element anchored to a category or section, When writing this article ,we tested some popular parallax websites,and bound that the ones with complex visuals look up to 30 seconds to load on a mobile device,whereas simple and minimalist long scroll websites
+                    loaded within a few seconds.   users must scroll back up the page which can be frustratingfor users who want to refer back to a certain element.An easy way aroud this is to include top 
+                    navigation.
+                 </div>
+               
+            </div>
+        </div>
+      <div class="foo">
+       <h3 > As one of Brisbane's leading full service digital and creative agencies,iFactory will help you achieve a digital solution that blends the needs of your business with that of your target audience.Our eclectic mix of digital
+        designers,web developers and digital marketing specialists come together for one purpose-to provide intelligent digital solutions based on your business needs.</h3> 
+        <br>
+        <p><u>Https://ifactory.com.au/news/scrolling-web-design-long-and-short-it</u></p>
+      
+        </div>
+        <div class="fooa">
+            <h2>
+                iFACTORY<br>
+            </h2>
+               Newyork,santigo 55555<br>
+               United states of America
+        </div>
+      </div>
+    
+     
+    
+
+</body>
+</html>
