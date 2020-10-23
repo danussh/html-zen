@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+       
+
+        #element{
+            position:relative;
+            top:80px;
+            margin: auto;
+            width:50%;
+          background-color: chocolate;
+           font-size: 30px;
+           color:azure;
+          
+           text-align: center;
+
+        }
+        div{
+            background-color: rgb(76, 240, 103);
+            height: 10cm;
+        }
+        #btn{
+            padding:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+
+    </p>
+    <script>
+        var container=document.createElement('div');
+          container.innerHTML="<h1>press refresh key:</h1>"
+        var r=document.createElement('p');
+         r.setAttribute("id","element");
+        
+         //r.innerHTML="content";
+          var button=document.createElement('button');
+          button.id="btn"
+          button.innerHTML="REFRESH";
+          button.setAttribute("onclick","getdata()")
+          
+           
+           function getdata()
+           {
+                var max=10000000;
+                var min= 99999999;
+               var value=Math.floor(Math.random()* (max-min) + min)
+              
+               var temp=value.toString().split('');
+              
+              var res= new Set(temp)
+             
+               console.log(res);
+               if(res.size != temp.length){
+                  getdata(); //recursive function
+              }
+               else{
+                r.innerHTML=value;
+               }
+           }
+         
+          container.append(r,button);
+         document.body.append(container);
+        
+
+       
+
+    </script>
+    
+</body>
+</html>
