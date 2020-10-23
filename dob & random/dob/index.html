@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOB</title>
+    <style>
+        body{
+            background-color: crimson;
+        }
+        .styleparent{
+            text-align: center;
+        }
+        #dob{
+            font-size: 30px;
+            border-radius: 10px;
+            margin: 10%;
+            padding: 50px;
+            
+        }
+        .button{
+            background-color: rgb(13, 123, 197);
+            padding: 30px;
+            font-size: 30px;
+        }
+        .screen{
+            text-align: center;
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+   <script>
+       var parentdiv=document.createElement('div');
+       parentdiv.setAttribute("class","styleparent");
+
+       var date=document.createElement('input');
+       date.setAttribute("type","date");
+       date.id="dob";
+       var button=document.createElement('button');
+       button.setAttribute("class","button");
+       button.setAttribute("onclick","datecalculate()")
+       button.innerHTML="click me!!";
+       parentdiv.append(date,button);
+       document.body.append(parentdiv);
+      
+
+
+       var screen=document.createElement('div');
+       screen.setAttribute("class","screen");
+
+
+       function datecalculate(){
+           var input=document.getElementById('dob').value;
+           if(Date.parse(input))
+           {
+               var currentdate =new Date();
+               var inputdate=new Date(input);
+
+               var millisecdiff = parseInt(currentdate.getTime()) - parseInt(inputdate.getTime())
+               var seconddiff = mathFloor(millisecdiff, 1000)
+               var minutediff = mathFloor(seconddiff, 60)
+               var hrdiff = mathFloor(minutediff, 60)
+               var daydiff = mathFloor(hrdiff, 24)
+               var monthdiff = getMonthDifference(inputdate, currentdate);
+               var yeardiff = getYear(inputdate, currentdate);
+            }
+            else{
+                //skip
+            }
+            screen.innerHTML = `
+                Given input date is ${inputdate} <br>
+                year ${yeardiff}<br>
+                month ${monthdiff}<br>
+                day ${daydiff}<br>
+                hour ${hrdiff}<br>
+                minute ${minutediff}<br>
+                second ${seconddiff}<br>
+                milli second ${millisecdiff}<br>
+                `;
+                document.body.appendChild(screen)
+           
+       }
+       
+    
+        function mathFloor(value1, value2) {
+            return Math.floor(value1 / value2);
+        }
+
+
+        function getYear(value1, value2) {
+            var date1 = new Date(value1);
+            var date2 = new Date(value2);
+            return date2.getFullYear() - date1.getFullYear();
+        }
+
+        function getMonthDifference(value1, value2) {
+            var year = getYear(value1, value2);
+            var month = (year * 12) + (value2.getMonth() - value1.getMonth())
+            return month;
+        }
+      
+   </script>
+</body>
+</html>
