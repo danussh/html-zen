@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+       main{
+    width:50%;
+    margin:auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+/* giving width,border  to each flex  */
+.item{
+    flex-basis: 250px;
+    border:2px solid black;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    height: 330px;
+}
+/* inner item which contains rate and button is also displayed as flex */
+.head2{
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 15px;
+
+}
+h3{
+    position: relative;
+    bottom:15px;
+    margin-right: 75px;
+    margin-bottom: 15px;
+}
+button{
+    background-color:green;
+    border-radius: 5px;
+    border:green;
+    color: white;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--box 1-->
+            <div class="item">
+                <img src="https://images.all-free-download.com/images/graphicthumb/flowers_516776.jpg" width="250px" height="140px">
+                <div class="head1">
+                    <h2>Product Title</h2>
+                    <p>Lorem ipsum dollar,sit ammrt consecuter apdicing lepdium tincident laroot erat valurpat 
+                    ammrt consecuter apdicing lepdium tincidend adlaroot. 
+                    </p>
+                    <div class="head2">
+                        <h3>$21.000</h3>
+                       <div><button>Add to cart</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>   
+    </main>
+</body>
+</html>
