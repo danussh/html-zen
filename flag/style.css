@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    width: 18rem;
+  }
+  body {
+    background-color: grey;
+  }
+  span {
+    color: white;
+    background-color: #5cb85c;
+  }
