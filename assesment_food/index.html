@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECEIPE</title>
+    <style>
+      #img {
+        width: 287px;
+        height: 300px;
+        border: none;
+      }
+      .card {
+        display: flex;
+        width: 18rem;
+        outline: none;
+        border-radius: 75px;
+      }
+      body {
+        background-image: url("https://images.unsplash.com/photo-1539141278536-63a0f98360a7?ixlib=rb-1.2.1&w=1000&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      #search {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  />
+
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <script>
+      var container = document.createElement("div");
+      container.setAttribute("class", "container");
+      var row1 = document.createElement("div");
+      row1.setAttribute("class", "row mt-3  text-center");
+
+      input = document.createElement("input");
+      input.style = "width:50% ";
+      input.type = "text";
+      input.name = "search";
+      input.placeholder = "What Are You Looking For!.....";
+      input.id = "search";
+
+      var btn = document.createElement("button");
+      btn.setAttribute("onclick", "mysearch()");
+      btn.type = "button ";
+      btn.setAttribute("class", "btn btn-success ml-3");
+      btn.innerHTML = "search";
+
+      var row2 = document.createElement("div");
+      row2.setAttribute("class", "row mt-3");
+      var div = document.createElement("div");
+
+      row1.append(input, btn);
+      container.append(row1);
+      document.body.append(container);
+
+      var container1 = document.createElement("div");
+      container1.setAttribute("class", "container");
+
+      function mysearch() {
+        var x = document.getElementById("search");
+
+        fetch(
+          `https://api.edamam.com/search?q=${x.value}&app_id=a3141c79&app_key=d5bda5e8929b38815e12c484019686a5&from=0&to=99`
+        )
+          .then((resp) => {
+            return resp.json();
+          })
+          .then((result) => {
+            for (var i = 0; i < 99; i++) {
+              var divh = document.createElement("div");
+              divh.setAttribute("class", "card ml-5 mr-4 mb-5 ");
+              var image = document.createElement("img");
+              image.id = "img";
+              image.setAttribute("class", "card-img-top");
+              image.src = result.hits[i].recipe.image;
+              var body = document.createElement("div");
+              body.setAttribute("class", "card-title text-center");
+              body.innerHTML = `<b>${result.hits[i].recipe.label}</b>`;
+              var ul = document.createElement("ul");
+              ul.setAttribute("class", "list-group list-group-flush");
+              var li1 = document.createElement("li");
+              li1.setAttribute("class", "list-group-item");
+              li1.innerHTML = `<b>Calories:</b> ${result.hits[i].recipe.calories}`;
+              var li2 = document.createElement("li");
+              li2.setAttribute("class", "list-group-item");
+              li2.innerHTML = `<b>URL:</b> <a href=${result.hits[i].recipe.url}>How To Make</a>`;
+              var li3 = document.createElement("li");
+              li3.setAttribute("class", "list-group-item");
+              li3.innerHTML = `<b>Health Labels:</b> ${result.hits[i].recipe.healthLabels[0]},${result.hits[i].recipe.healthLabels[1]},${result.hits[i].recipe.healthLabels[2]}`;
+              var li4 = document.createElement("li");
+              li4.setAttribute("class", "list-group-item");
+              li4.innerHTML = `<div class="dropdown">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Ingredients List</b></button>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">  
+             <button class="dropdown-item" type="button">${result.hits[i].recipe.ingredientLines[0]}</button>
+             <button class="dropdown-item" type="button">${result.hits[i].recipe.ingredientLines[1]}</button>
+             </div>`;
+              var li5 = document.createElement("li");
+              li5.setAttribute("class", "list-group-item");
+              li5.innerHTML = `<div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Vitamins:Quantity</b></button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">  
+              <button class="dropdown-item" type="button"><b>${result.hits[i].recipe.totalNutrients.VITA_RAE.label}:</b> ${result.hits[i].recipe.totalNutrients.VITA_RAE.quantity} (QTY)</button>
+              <button class="dropdown-item" type="button"><b>${result.hits[i].recipe.totalNutrients.VITC.  label}: </b>${result.hits[i].recipe.totalNutrients.VITC.quantity} (QTY)</button>
+              <button class="dropdown-item" type="button"><b>${result.hits[i].recipe.totalNutrients.VITD.    label}:</b> ${result.hits[i].recipe.totalNutrients.VITD.quantity} (QTY):</button>
+              <button class="dropdown-item" type="button"><b>${result.hits[i].recipe.totalNutrients.VITK1. label}:</b> ${result.hits[i].recipe.totalNutrients.VITK1.quantity} (QTY)</button>
+              <button class="dropdown-item" type="button"><b>${result.hits[i].recipe.totalNutrients.SUGAR. label}:</b> ${result.hits[i].recipe.totalNutrients.SUGAR.quantity} (QTY)</button>
+              </div>`;
+              ul.append(li1, li2, li3, li4, li5);
+              divh.append(image, body, ul);
+              row2.append(divh);
+              container1.append(row2);
+              document.body.append(container1);
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+    </script>
+  </body>
+</html>
