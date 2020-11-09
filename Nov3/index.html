@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <title>TRIVIA QUIZ</title>
+
+    <style>
+     body{
+    background-color: black;
+    font-family: 'PT Serif';
+
+}  
+#title{
+    text-align: center;
+    color:rgb(238, 136, 20);
+}
+    </style>
+
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+    crossorigin="anonymous"></script>
+   
+<script>
+     //script file for QUIZ
+    var div=document.createElement('div')
+    div.setAttribute('class','container')
+    var title=document.createElement('h1')
+   // title.setAttribute('class','cont')
+    title.id='title'
+    title.innerHTML="QUICK QUIZ"
+    var brk1=document.createElement('br')
+
+    var play=document.createElement('a')
+    play.id='play';
+    play.href='game.html'
+    play.setAttribute('class','btn btn-primary container-fluid');
+    play.innerHTML="PLAY"
+
+    var brk2=document.createElement('br')
+    var brk3=document.createElement('br')
+
+    var highscores=document.createElement('a')
+    highscores.href='highscores.html'
+    highscores.id='highscores';
+    highscores.setAttribute('class','btn btn-primary container-fluid');
+    highscores.innerHTML="HIGH SCORE"
+    div.append(title,brk1,play,brk2,brk3,highscores)
+    document.body.append(div)
+
+</script>
+
+</body>
+</html>
